@@ -1,0 +1,35 @@
+{
+  "name": "sails-generate-test",
+  "version": "0.10.0",
+  "description": "Generate a test for Sails.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "test",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sails": {
+  	"generator": {
+	 		"name": "test",
+	 		"behavior": "overrides `sails generate test`",
+	 		"sailsVersion": "~0.10.0",
+	 		"main": "lib/index"
+  	}
+  }
+}
